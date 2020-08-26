@@ -237,9 +237,10 @@ img{
     font-size: 2rem;
 }
 
-.curso p span{
+.curso p span,.curso p.descripcion{
     font-weight: 400;
 }
+
 
 
 /**footer**/
