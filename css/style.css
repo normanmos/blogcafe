@@ -62,9 +62,14 @@ img{
         display: flex;
         justify-content: space-between;
     }
-
+    .columnas-4{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
     .columnas-6{
         flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8{
+        flex: 0 0 calc(66.6% - 1rem);
     }
 }
 /** botones**/
