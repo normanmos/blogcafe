@@ -11,7 +11,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
-
 }
 
 .contenedor{
@@ -61,6 +60,10 @@ img{
     .grid{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .cc{
+        justify-content: center;
     }
     .columnas-4{
         flex: 0 0 calc(33.3% - 1rem);
@@ -71,6 +74,12 @@ img{
     .columnas-8{
         flex: 0 0 calc(66.6% - 1rem);
     }
+    .columnas-10{
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+    .columnas-12{
+        flex: 0 0 100%;
+    }
 }
 /** botones**/
 
@@ -78,18 +87,24 @@ img{
     display: block;
     text-align: center;
     padding: 1rem 3rem;
-    margin: 2rem;
+    margin: 2rem  0;
     color: white;
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2rem;
+    flex: 0 0 100%;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
     .btn{
         display: inline-block;
+        flex: 0 0 auto;
     }
 }
 
@@ -266,4 +281,43 @@ img{
 
 .site-footer p span{
     font-weight: 700;
+}
+
+/** contacto **/
+
+.formulario-contacto{
+    background-color: white;  
+    padding: 5rem;
+}
+
+@media (min-width: 768px){
+    .formulario-contacto{
+        margin-top: -10rem;
+        
+    }
+}
+
+.formulario-contacto .campo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.formulario-contacto .campo label{
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto .campo textarea{
+    flex: 1;
+    border: 1px solid gray;
+    padding: 1rem;
+}
+
+.formulario-contacto .campo textarea{
+    height: 20rem;
+}
+
+.formulario-contacto .enviar{
+    display: flex;
+    justify-content: flex-end;
 }
